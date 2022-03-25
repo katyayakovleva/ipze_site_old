@@ -138,11 +138,11 @@ add_action( 'after_setup_theme', 'ipze_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function ipze_scripts() {
-	wp_enqueue_style( 'ipze-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'ipze-style', get_stylesheet_uri(), array(), rand(111,9999));
 	wp_style_add_data( 'ipze-style', 'rtl', 'replace' );
 
-	wp_enqueue_style('header_css', get_template_directory_uri(). '/assets/css/header.css');
-	wp_enqueue_style('footer_css', get_template_directory_uri(). '/assets/css/footer.css');
+	wp_enqueue_style('header_css', get_template_directory_uri(). '/assets/css/header.css', array(), rand(111,9999));
+	wp_enqueue_style('footer_css', get_template_directory_uri(). '/assets/css/footer.css', array(), rand(111,9999));
 	wp_enqueue_script( 'ipze-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
