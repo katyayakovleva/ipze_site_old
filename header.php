@@ -54,8 +54,8 @@
 							?>
 					</nav><!-- #site-navigation -->
        			
-					<img class="line search_img" src="<?php bloginfo('template_url'); ?>/assets/img/bi_search.svg">
-
+					
+					<?php get_search_form(); ?>
         			<div class="social_media">
           				<img class="line social_img facebook_img" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg">
 						<img class="line social_img instagram_img" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg">
