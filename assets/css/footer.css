@@ -1,14 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     text-decoration: none !important;
 }
 footer{
 
-    background-color: #407076;
-    padding: 0 0px;
-    margin: 0 auto;
-    padding-bottom: 40px;
+    background-color: red;
+    /* padding: 0 0px;
+    margin: 0 auto; */
+    /* padding-bottom: 100px; */
 }
 .foot_cont{
     width: 100%;

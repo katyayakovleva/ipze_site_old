@@ -77,9 +77,9 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
+/* body {
 	margin: 0;
-}
+} */
 
 /**
  * Render the `main` element consistently in IE.
@@ -178,7 +178,7 @@ sup {
 }
 
 sub {
-	bottom: -0.25em;
+	/* bottom: -0.25em; */
 }
 
 sup {
@@ -418,7 +418,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 }
 
 dfn,
@@ -429,18 +429,18 @@ i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	/* margin: 0 1.5em; */
 }
 
 address {
-	margin: 0 0 1.5em;
+	/* margin: 0 0 1.5em; */
 }
 
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", courier, monospace;
 	line-height: 1.6;
-	margin-bottom: 1.6em;
+	/* margin-bottom: 1.6em; */
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
@@ -479,12 +479,12 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 }
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	/* margin: 0 0 1.5em 3em; */
 }
 
 ul {
@@ -506,7 +506,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	/* margin: 0 1.5em 1.5em; */
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -526,7 +526,7 @@ figure {
 }
 
 table {
-	margin: 0 0 1.5em;
+	/* margin: 0 0 1.5em; */
 	width: 100%;
 }
 
@@ -749,22 +749,22 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
 	display: none;
 }
-
+/* 
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
-}
+} */
 
 .page-links {
 	clear: both;
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 /* Comments
@@ -780,7 +780,7 @@ textarea {
 /* Widgets
 --------------------------------------------- */
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .widget select {
@@ -806,7 +806,7 @@ textarea {
 /* Captions
 --------------------------------------------- */
 .wp-caption {
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 	max-width: 100%;
 }
 
@@ -817,7 +817,7 @@ textarea {
 }
 
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+	margin: 0;
 }
 
 .wp-caption-text {
@@ -827,9 +827,9 @@ textarea {
 /* Galleries
 --------------------------------------------- */
 .gallery {
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 	display: grid;
-	grid-gap: 1.5em;
+	/* grid-gap: 1.5em; */
 }
 
 .gallery-item {
@@ -947,7 +947,7 @@ textarea {
 
 	/*rtl:ignore*/
 	margin-right: 1.5em;
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 }
 
 .alignright {
@@ -957,7 +957,7 @@ textarea {
 
 	/*rtl:ignore*/
 	margin-left: 1.5em;
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 }
 
 .aligncenter {
@@ -965,5 +965,5 @@ textarea {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 1.5em;
+	/* margin-bottom: 1.5em; */
 }
