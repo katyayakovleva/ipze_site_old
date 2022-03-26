@@ -178,3 +178,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function wporg_custom_post_type() {
+    register_post_type('wporg_product',
+        array(
+            'labels'      => array(
+                'name'          => __('Викладачі', 'textdomain'),
+                'singular_name' => __('Викладач', 'textdomain'),
+            ),
+                'public'      => true,
+                'has_archive' => true,
+        )
+    );
+}
+add_action('init', 'wporg_custom_post_type');
