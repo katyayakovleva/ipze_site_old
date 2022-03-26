@@ -1,0 +1,9 @@
+/* Widgets
+--------------------------------------------- */
+.widget {
+	margin: 0;
+}
+
+.widget select {
+	max-width: 100%;
+}

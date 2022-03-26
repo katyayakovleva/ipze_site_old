@@ -12,9 +12,9 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'ipze' ); ?></h1>
+		<section >
+			<header >
+				<h1 ><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'ipze' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
@@ -26,8 +26,8 @@ get_header();
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'ipze' ); ?></h2>
+					<div class="widget ">
+						<h2 ><?php esc_html_e( 'Most Used Categories', 'ipze' ); ?></h2>
 						<ul>
 							<?php
 							wp_list_categories(

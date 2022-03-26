@@ -14,8 +14,8 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+			<header >
+				<h1 >
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'ipze' ), '<span>' . get_search_query() . '</span>' );

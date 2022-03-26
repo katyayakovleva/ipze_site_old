@@ -11,14 +11,14 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-	<h1>fucking Archive</h1>
+	<!-- <h1>fucking Archive</h1> -->
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header>
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
+				the_archive_title( '<h1>', '</h1>' );
+				the_archive_description( '<div >', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
