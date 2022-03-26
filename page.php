@@ -14,9 +14,9 @@
 
 get_header();
 ?>
-
+<h1>Page</h1>
 	<main id="primary" class="site-main">
-	<h1>Page</h1>
+	
 		<?php
 		get_template_part( 'template-parts/content', 'title' );
 		while ( have_posts() ) :

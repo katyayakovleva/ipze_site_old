@@ -9,9 +9,9 @@
 
 get_header();
 ?>
-
+<h1>Archive</h1>
 	<main id="primary" class="site-main">
-	<!-- <h1>fucking Archive</h1> -->
+	
 
 		<?php if ( have_posts() ) : ?>
 
@@ -48,5 +48,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -16,15 +16,22 @@
 /**
  * Remove the margin in all browsers.
  */
-/* body {
+body {
 	margin: 0;
-} */
+}
 
 /**
  * Render the `main` element consistently in IE.
  */
 main {
 	display: block;
+	
+}
+.content-article{
+	width: 100%;
+    max-width: 1200px;
+    padding: 0 0px;
+    margin: 0 auto;
 }
 
 /**
@@ -33,7 +40,7 @@ main {
  */
 h1 {
 	font-size: 2em;
-	margin: 0.67em 0;
+	/* margin: 0.67em 0; */
 }
 
 /* Grouping content
@@ -117,7 +124,7 @@ sup {
 }
 
 sub {
-	/* bottom: -0.25em; */
+	bottom: -0.25em;
 }
 
 sup {
@@ -415,29 +422,35 @@ body {
 }
 
 hr {
-	background-color: #ccc;
+	/* background-color: #ccc;
 	border: 0;
-	height: 1px;
+	height: 1px; */
 	/* margin-bottom: 1.5em; */
 }
 
 ul,
 ol {
-	/* margin: 0 0 1.5em 3em; */
+	padding-left: 0;
+}
+li{
+	
+	list-style-type: none;
 }
 
 ul {
-	list-style: disc;
+	/* list-style: disc; */
+	list-style-type: none;
 }
 
 ol {
-	list-style: decimal;
+	/* list-style: decimal; */
+	list-style-type: none;
 }
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+	/* margin-bottom: 0;
+	margin-left: 1.5em; */
 }
 
 dt {
@@ -456,8 +469,8 @@ object {
 }
 
 img {
-	height: auto;
-	max-width: 100%;
+	/* height: auto;
+	max-width: 100%; */
 }
 
 figure {
@@ -466,13 +479,15 @@ figure {
 
 table {
 	/* margin: 0 0 1.5em; */
-	width: 100%;
+	/* width: 100%; */
 }
 
 /* Links
 --------------------------------------------- */
 a {
 	color: #4169e1;
+	text-decoration: none;
+
 }
 
 a:visited {

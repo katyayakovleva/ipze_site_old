@@ -14,7 +14,7 @@
 
 	<?php ipze_post_thumbnail(); ?>
 
-	<div class ="">
+	<div class="content-article">
 		<?php
 		the_content();
 
