@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search results pages
+ * Сторінка результатів пошуку
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *

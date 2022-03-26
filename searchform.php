@@ -1,6 +1,13 @@
 
 <?php
-/* Custom search form */
+/**
+ * Пошукова форма
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ *
+ * @package IPZE
+ */
+
 ?>
 <form role="search" method="get" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="input-group mb-3">
   <div class="input-group">
