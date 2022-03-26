@@ -10,8 +10,8 @@
 ?>
 
 
-	<header class="">
-		<?php the_title( '<h1 class="">', '</h1>' ); ?>
+	<header class="page-title">
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 
