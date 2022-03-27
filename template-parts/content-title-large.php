@@ -10,8 +10,21 @@
 ?>
 
 
-	<header class="page-title">
-		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<section class="large-title">
+		
+		<?php if ( has_post_thumbnail()) : ?>
+			<div class="large-title-img" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>') ;">
+				<div class="large-title-img-blurcolor"></div>
+				<div class="large-title-title-div">
+					<?php the_title( '<h1 class="large-title-title">', '</h1>' ); ?>
+				</div>
+				
+			</div>
+			
+			
+			
+		<?php endif; ?> 
+	
+	</section><!-- .entry-header -->
 
 

@@ -33,3 +33,47 @@
 /* .page-title{
 	margin-left: 120px;
 } */
+
+
+
+/* Large page title
+--------------------------------------------- */
+
+.large-title{
+    width: 100%;
+	position: relative;
+	
+}
+.large-title-img-blurcolor{
+	background-color: rgba(64, 112, 118, 0.46);
+	height: inherit;
+}
+.large-title-img {
+	background-position: center;
+  	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+/* .large-title-img img{
+	width:100%;
+	height: auto;
+    max-width:inherit !important;
+    padding:0 !important;
+	position:relative;
+	z-index:-1;
+} */
+.large-title-title-div{
+	margin-left: 120px;
+	margin-top: -75px;
+	/* transform: translateY(0); */
+	display: flex;
+
+}
+.large-title-title{
+	background: #FFFFFF;
+	color:  #FFCF00;
+	padding: 20px 35px;
+	margin: 0;
+
+   
+}

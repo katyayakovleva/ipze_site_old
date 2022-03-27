@@ -26,7 +26,7 @@
 <?php wp_body_open(); ?>
 <!-- <div id="page"> -->
 	
-	<header>
+	<header class="main-header">
   		<div class="container">
     		<div class="row">
       			<div class="col-3">

@@ -10,10 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-
-	<?php ipze_post_thumbnail(); ?>
-
+	<!-- <h1>Content-page</h1> -->
 	<div class="content-article">
 		<?php
 		the_content();
