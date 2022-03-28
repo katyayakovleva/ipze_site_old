@@ -36,7 +36,7 @@
 
 
 
-/* Large page title
+/* Page title large
 --------------------------------------------- */
 
 .large-title{
@@ -54,16 +54,8 @@
 	height: 500px;
 	position: relative;
 }
-/* .large-title-img img{
-	width:100%;
-	height: auto;
-    max-width:inherit !important;
-    padding:0 !important;
-	position:relative;
-	z-index:-1;
-} */
+
 .large-title-title-div{
-	margin-left: 120px;
 	margin-top: -75px;
 	/* transform: translateY(0); */
 	display: flex;
@@ -76,4 +68,30 @@
 	margin: 0;
 
    
+}
+
+/*  Page title simple
+--------------------------------------------- */
+
+.simple-title{
+	width: 100%;
+    max-width: 1200px;
+    /* padding: 0 0px; */
+    margin: 0 auto;
+}
+.simple-title-title{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 69px;
+
+	color: #407076;
+}
+
+.simple-title hr {
+	color: #407076;
+	height: 2px;
+	opacity: 1;
+	/* margin: 0 5%; */
 }

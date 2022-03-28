@@ -15,14 +15,10 @@
 		<?php if ( has_post_thumbnail()) : ?>
 			<div class="large-title-img" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>') ;">
 				<div class="large-title-img-blurcolor"></div>
-				<div class="large-title-title-div">
+				<div class="large-title-title-div container">
 					<?php the_title( '<h1 class="large-title-title">', '</h1>' ); ?>
 				</div>
-				
-			</div>
-			
-			
-			
+			</div>	
 		<?php endif; ?> 
 	
 	</section><!-- .entry-header -->

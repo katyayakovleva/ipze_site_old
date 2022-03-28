@@ -10,8 +10,12 @@
 ?>
 
 
-	<header class="page-header">
-		<?php the_title( '<h1 class="">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
+<section class="simple-title container">
+				
+	<div class="">
+		<?php the_title( '<h1 class="simple-title-title">', '</h1>' ); ?>
+		<hr class="simple-title-hr">
+	</div>
+		
+</section><!-- .entry-header -->
 

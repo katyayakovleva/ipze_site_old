@@ -44,9 +44,12 @@ footer{
     margin-top: 53px;
     color: #FFFFFF;
 }
-hr:not([size]) {
+footer hr:not([size]) {
     height: 1.5px;
     color: #FFFFFF;
+}
+footer hr {
+    opacity: 1;
 }
 .foot_txt_dwn{
     font-family: 'Roboto';
