@@ -18,7 +18,6 @@ get_header();
 	<main id="primary" class="site-main">
 	<h1>Front Page</h1>
 		<?php
-		get_template_part( 'template-parts/content', 'title' );
 		while ( have_posts() ) :
 			the_post();
 

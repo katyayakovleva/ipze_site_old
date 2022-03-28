@@ -181,8 +181,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function wporg_custom_post_type() {
-    register_post_type('wporg_product',
+function ipze_custom_post_type() {
+    register_post_type('teacher',
         array(
             'labels'      => array(
                 'name'          => __('Викладачі', 'textdomain'),
@@ -193,4 +193,53 @@ function wporg_custom_post_type() {
         )
     );
 }
-add_action('init', 'wporg_custom_post_type');
+add_action('init', 'ipze_custom_post_type');
+
+/**
+ * Generate breadcrumbs for showing a navigation page path
+ */
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Головна </a>';
+    if (is_category() || is_single()) {
+        echo ' &nbsp;&nbsp;>&nbsp;&nbsp;  ';
+        the_category(' &bull; ');
+            if (is_single()) {
+                echo " &nbsp;&nbsp;>&nbsp;&nbsp;  ";
+                the_title();
+            }
+	
+    } 
+	elseif (is_page()) {
+
+		
+		$page = get_queried_object();
+		$parent_id = wp_get_post_parent_id($page);
+		$parents = array();
+		
+		while($parent_id){
+			$parents[] = $parent_id;
+			$page = get_post($parent_id);
+			$parent_id =  wp_get_post_parent_id($page);
+		}
+
+		$parents = array_reverse($parents);
+		
+		foreach($parents as $parent){
+			echo " &nbsp;&nbsp;>&nbsp;&nbsp; ";
+			echo '<a href="'.get_permalink($parent).'" rel="nofollow">';
+			echo get_the_title($parent);
+			echo '</a>';
+		}	
+		echo " &nbsp;&nbsp;>&nbsp;&nbsp;  ";
+    	echo the_title();
+		
+    } 
+	
+	// elseif (is_search()) {
+    //     echo " > Search Results for... ";
+    //     echo '"<em>';
+    //     echo the_search_query();
+    //     echo '</em>"';
+    // }
+}
+

@@ -65,9 +65,16 @@
 	background: #FFFFFF;
 	color:  #FFCF00;
 	padding: 20px 35px;
-	margin: 0;
+	margin: 0;  
+}
 
-   
+.large-title-breadcrumb{
+	color: white;
+	float: left;
+	padding-top: 55px;
+}
+.large-title-breadcrumb a{
+	color:white;
 }
 
 /*  Page title simple
@@ -94,4 +101,11 @@
 	height: 2px;
 	opacity: 1;
 	/* margin: 0 5%; */
+}
+.simple-title-breadcrumb{
+	float: right;
+	color: #407076;
+}
+.simple-title-breadcrumb a{
+	color:#407076;
 }
