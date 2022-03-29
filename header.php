@@ -26,23 +26,41 @@
 <?php wp_body_open(); ?>
 <!-- <div id="page"> -->
 	
-	<header class="main-header">
+
+	<header>
   		<div class="container">
-    		<div class="row">
-      			<div class="col-3">
+			<div class="row">
+				<div class="col-3">
 					<a href="<?php echo home_url(); ?>">
 						<img class="logo_img" src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt='logo'>
 					</a>
-      			</div>
-      			<div class="col-9">
-        			<div class="head_lang">
-            			<div class="line head_txt">UA</div>
-            			<div class="line head_txt"> | </div>
-            			<div class="line head_txt">EN</div>
+				</div>
+				<div class="col-9">
+					<div class="head_lang">
+						<div class="line head_txt">UA</div>
+						<div class="line head_txt"> | </div>
+						<div class="line head_txt">EN</div>
+					</div>
+        			<div class="row search_social">
+          				<div class="col-10">
+            				<div class="d3">
+								<?php get_search_form(); ?>
+            				</div>
+          				</div>
+          				<div class="col-2 social_media_icon">
+							<img class="line social_img facebook_img" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg">
+							<img class="line social_img instagram_img" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg">
+							<img class="line social_img telegram_img" src="<?php bloginfo('template_url'); ?>/assets/img/telegram.svg">
+          				</div>
         			</div>
-        			
-					<nav id="site-navigation" class=" main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ipze' ); ?></button>
+        			<div class="header_burger">
+          				<span></span>
+        			</div>
+      			</div>
+				
+      			<div class="menu_back">
+				  <nav id="site-navigation" class="menu">
+						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ipze' ); ?></button> -->
 							<?php
 								wp_nav_menu(
 									array(
@@ -53,16 +71,9 @@
 								);
 							?>
 					</nav><!-- #site-navigation -->
-       			
-					
-					<?php get_search_form(); ?>
-        			<div class="social_media">
-          				<img class="line social_img facebook_img" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.svg">
-						<img class="line social_img instagram_img" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg">
-						<img class="line social_img telegram_img" src="<?php bloginfo('template_url'); ?>/assets/img/telegram.svg">
-					</div>
       			</div>
     		</div>
+    		<img class="photo" src="<?php bloginfo('template_url'); ?>/assets/img/photo.png">
   		</div>
-		  
+
 	</header>
