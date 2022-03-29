@@ -16,8 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="style/header.css" rel="stylesheet" type="text/css">
-    <link href="style/footer.css" rel="stylesheet" type="text/css">
+<!--	<link href="style/header.css" rel="stylesheet" type="text/css">-->
+<!--    <link href="style/footer.css" rel="stylesheet" type="text/css">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
@@ -59,7 +59,7 @@
       			</div>
 				
       			<div class="menu_back">
-				  <nav id="site-navigation" class="menu">
+				  <nav id="site-navigation" class="head_menu">
 						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ipze' ); ?></button> -->
 							<?php
 								wp_nav_menu(

@@ -35,7 +35,7 @@
     margin-top: 30px;
 }
 
-.menu{
+.head_menu{
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
@@ -181,20 +181,20 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-.menu{
+.head_menu{
     padding-top: 40px;
     margin-top: 0px;
 }
-.menu ul > li {
+.head_menu ul > li {
     display: inline-block;
     position: relative;
     margin-right: 0px;
 }
-.menu ul ul li{
+.head_menu ul ul li{
     display: block;
     position: center;
 }
-.menu ul > li > a {
+.head_menu ul > li > a {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -210,8 +210,8 @@ nav ul {
     color: inherit;
     margin-left: 10px;
 }
-.menu ul .active, .menu ul > li > a:hover, .menu ul ul li a:hover {color: #FE6242;}
-.menu ul ul {
+.head_menu ul .active, .head_menu ul > li > a:hover, .head_menu ul ul li a:hover {color: #FE6242;}
+.head_menu ul ul {
     position: absolute;
     left: -1px;
     z-index: 5;
@@ -222,8 +222,8 @@ nav ul {
     transform: translateY(10px);
     transition: .3s ease-in-out;
 }
-.menu ul ul li {position: relative;}
-.menu ul ul a {
+.head_menu ul ul li {position: relative;}
+.head_menu ul ul a {
     background: white;
     border-top: 1px solid #ECF1F2;
     color: #162527;
@@ -232,7 +232,7 @@ nav ul {
     letter-spacing: 1px;
     padding: 10px 20px;
 }
-.menu ul ul ul {
+.head_menu ul ul ul {
     position: absolute;
     top: 0;
     left: calc(100% - 1px);
@@ -339,7 +339,7 @@ nav li:hover > .submenu {
         transform: scale(0);
     }
     /*menu*/
-    .menu{
+    .head_menu{
         position: absolute;
         width: 400px;
         background-color: #FE6242;
