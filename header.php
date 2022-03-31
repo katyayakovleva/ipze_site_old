@@ -73,7 +73,7 @@
 					</nav><!-- #site-navigation -->
       			</div>
     		</div>
-    		<img class="photo" src="<?php bloginfo('template_url'); ?>/assets/img/photo.png">
+    		
   		</div>
 
 	</header>
